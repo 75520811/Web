@@ -1,0 +1,63 @@
+<html>
+    <head>
+       <title>Regestration form</title>
+       <link rel="stylesheet" href="register.css">
+    </head>
+    <body background="final.webp">
+        <center>
+        </center>
+    </body>
+        <div class="container">
+            <div class="title">Registration Form</div>
+            <form action="login.html">
+                <div class="user_details">
+                    <div class="input_box">
+                        <span class="details">Full Name</span>
+                        <input type="text" placeholder="Enter your name" required>
+                       
+                    </div>
+                    <div class="input_box">
+                        <span class="details">Username</span>
+                        <input type="text" placeholder="Enter your username" required>
+                    </div>
+                    <div class="input_box">
+                        <span class="details">Email </span>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input_box">
+                        <span class="details">Phone Number</span>
+                        <input type="tel" placeholder="10 numbers" maxlength="10" required>
+                    </div>
+                    <div class="input_box">
+                        <span class="details">Password</span>
+                        <input type="text" placeholder="Enter password" required>
+                    </div>
+                    <div class="input_box">
+                        <span class="details">Confirm password</span>
+                        <input type="text" placeholder="Confirm your password" required>
+                        <p id="message"></p>
+
+                        <!----------Script---------->
+            <script scr="register.js"></script>
+                    
+                    </div>
+                </div>
+                <div class="gender_details">
+                   
+                    <p>Gender:</p>
+                    <input type="radio" name="gender" required>Male
+                    <input type="radio" name="gender" required>Female
+                    
+                </div>
+                <div class="button">
+                    
+                   
+                    <!--<button class="btn"><a href="login.html">Register</a></button>-->
+                   <input type="submit" onclick="checkPassword()" value="Register">
+                
+                </div>
+            </form>
+            
+        </div>
+    </body>
+</html>

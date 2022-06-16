@@ -1,0 +1,3 @@
+package encapsulation;
+class employee {
+}
